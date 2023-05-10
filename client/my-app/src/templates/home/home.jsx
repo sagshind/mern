@@ -1,5 +1,9 @@
+import React from 'react';
+
+
+
 const home = (props) =>{
-    return <div>This is Home page</div>
+    return  <div>this is home</div>
 }
 
 export default home;

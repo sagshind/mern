@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/header/header";
 import Home from './templates/home/home';
 import About from './templates/about/about';
 import Projects from './templates/projects/projects';
@@ -9,17 +10,18 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/about-us" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/donation" element={<Donation />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/" element={<Home />} >
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <Router>
+        <Routes>
+          <Route  element={<Header />} >
+            <Route exact path="/" element={<Home />} />
+            <Route path="about-us" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="events" element={<Events />} />
+            <Route path="donation" element={<Donation />} />
+            <Route path="contact-us" element={<Contact />} />
+          </Route>
+        </Routes>
+      </Router>
   );
 }
 
