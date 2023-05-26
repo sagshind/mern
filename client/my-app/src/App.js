@@ -19,7 +19,6 @@ function App() {
             <Route path="events" element={<Events />} />
             <Route path="donation" element={<Donation />} />
             <Route path="contact-us" element={<Contact />} />
-            <Route path="404" element={<Contact />} />
           </Route>
 
         </Routes>
