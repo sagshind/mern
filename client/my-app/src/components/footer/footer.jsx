@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const header = (props) =>{
+const footer = (props) =>{
     return (<div>
         <ul>
             <li><Link to="/">Home</Link></li>
@@ -15,4 +15,4 @@ const header = (props) =>{
 </div>)
 }
 
-export default header;
+export default footer;

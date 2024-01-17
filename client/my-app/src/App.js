@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header/header";
+import Common from "./components/common/common";
 import Home from './templates/home/home';
 import About from './templates/about/about';
 import Projects from './templates/projects/projects';
@@ -12,7 +12,7 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route  element={<Header />} >
+          <Route  element={<Common />} >
             <Route exact path="/" element={<Home />} />
             <Route path="about-us" element={<About />} />
             <Route path="projects" element={<Projects />} />
